@@ -1,7 +1,13 @@
 import React from 'react';
-import { Text } from 'react-native';
+import 'react-native-gesture-handler';
+import AppContainer from '../AppContainer';
+import RootNavigator from '../../navigators';
 
 const App = () => {
-  return <Text>This is default React Native BoilerPlate using recoil</Text>;
+  return (
+    <AppContainer>
+      <RootNavigator />
+    </AppContainer>
+  );
 };
 export default App;
